@@ -1,22 +1,28 @@
+// const express = require('express');
+// const app = express();
+// const PORT = process.env.PORT || 3000;
+
+// app.get('/', (req, res) => {
+//   res.send('Hello, world!');
+// });
+
+// app.listen(PORT, () => {
+//   console.log(`App is up and running. Listening on port ${PORT}`);
+// });
 const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 3000;
+var mysql = require('mysql')
+var con = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'actozi'
+})
 
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
 });
-
-app.listen(PORT, () => {
-  console.log(`App is up and running. Listening on port ${PORT}`);
-});
-
-// var mysql = require('mysql')
-// var connection = mysql.createConnection({
-//   host: 'localhost',
-//   user: 'root',
-//   password: 'password',
-//   database: 'my_db'
-// })
 
 // connection.connect()
 
