@@ -4,7 +4,7 @@
 
 // app.get('/', (req, res) => {
 //   res.send('Hello, world!');
-// });
+// });  bla bla bla
 
 // app.listen(PORT, () => {
 //   console.log(`App is up and running. Listening on port ${PORT}`);
@@ -15,7 +15,7 @@ var con = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'actozi'
+  database: 'actozi'  
 })
 
 
