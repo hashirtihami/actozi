@@ -1,4 +1,5 @@
-.slick-slider div {
+.slick-slider {
+  margin-top: 10px;
   background-color: aqua;
   text-align: center;
 }
