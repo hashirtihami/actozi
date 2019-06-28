@@ -9,7 +9,7 @@ import "./Footer.css";
 export default class Footer extends React.Component {
   render() {
     return (
-      <Navbar bg="dark" expand="lg" variant="dark">
+      <Navbar bg="dark" expand="lg" variant="dark" sticky="bottom">
         <Nav className="footer-nav">
           <Navbar.Text>© 2019 Actozi Clothing</Navbar.Text>
           <Nav.Link href="#home">About</Nav.Link>

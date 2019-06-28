@@ -14,29 +14,9 @@ function App() {
     <div>
       <Header />
       <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
+      <div>
+        <h1>Actozi is SHIT !!</h1>
+      </div>
       <Footer />
     </div>
     // <div className="App">

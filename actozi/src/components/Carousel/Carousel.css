@@ -1,5 +1,17 @@
-.slick-slider {
-  margin-top: 10px;
-  background-color: aqua;
-  text-align: center;
+.slick-slide div {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#carousel-item-1 {
+  background-image: url("../../assets/1.jpg");
+}
+
+#carousel-item-2 {
+  background-image: url("../../assets/2.jpg");
+}
+
+#carousel-item-3 {
+  background-image: url("../../assets/3.jpg");
 }
