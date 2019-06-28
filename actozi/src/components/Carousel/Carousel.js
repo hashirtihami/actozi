@@ -14,29 +14,14 @@ export default class Carousel extends React.Component {
       slidesToScroll: 1,
       fade: true,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 500
     };
     return (
-      <div>
+      <div id="carousel">
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+          <div id="carousel-item-1" />
+          <div id="carousel-item-2" />
+          <div id="carousel-item-3" />
         </Slider>
       </div>
     );

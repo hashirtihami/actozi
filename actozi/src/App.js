@@ -9,12 +9,14 @@ import Header from "./components/Header/Header";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 
-
 function App() {
   return (
     <div>
       <Header />
       <Carousel />
+      <div>
+        <h1>Actozi is SHIT !!</h1>
+      </div>
       <Footer />
     </div>
     // <div className="App">
