@@ -5,22 +5,39 @@ import "bootstrap/dist/css/bootstrap.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import CustomNavbar from "./components/Navbar/Navbar";
-import CustomCarousel from "./components/Carousel/Carousel";
+import Header from "./components/Header/Header";
+import Carousel from "./components/Carousel/Carousel";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    lazyLoad: true
-  };
   return (
     <div>
-      <CustomNavbar />
-      <CustomCarousel />
+      <Header />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Carousel />
+      <Footer />
     </div>
     // <div className="App">
     //   <header className="App-header">

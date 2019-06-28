@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import "./Carousel.css";
 
-export default class CustomCarousel extends React.Component {
+export default class Carousel extends React.Component {
   render() {
     const settings = {
       arrows: false,

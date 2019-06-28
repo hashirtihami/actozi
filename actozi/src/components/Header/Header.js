@@ -3,10 +3,10 @@ import logo from "../../logo.svg";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-export default class CustomNavbar extends React.Component {
+export default class Header extends React.Component {
   render() {
     return (
-      <Navbar bg="dark" expand="lg" variant="dark">
+      <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
         <Navbar.Brand href="#home" className="mx-auto">
           <img
             src={logo}
