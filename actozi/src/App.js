@@ -9,33 +9,11 @@ import Header from "./components/Header/Header";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 
+
 function App() {
   return (
     <div>
       <Header />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
-      <Carousel />
       <Carousel />
       <Footer />
     </div>

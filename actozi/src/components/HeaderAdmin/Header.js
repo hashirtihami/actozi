@@ -19,13 +19,16 @@ export default class Header extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
           <Nav>
-            <Nav.Link href="#link">Actozi Clothings</Nav.Link>
+            <NavDropdown title="Products" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Add Product</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Existing Products</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#link">Orders</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse>
           <Nav className="ml-auto">
-            <Nav.Link href="#home">Cart</Nav.Link>
-            <Nav.Link href="#home">Login</Nav.Link>
+            <Nav.Link href="#home">Admin</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
