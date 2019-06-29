@@ -37,5 +37,5 @@ const Home = () => (
     <h1>Welcome nigga</h1>
   </div>
 );
-
+//  i didnt do shit
 export default Admin;
