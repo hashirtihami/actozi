@@ -17,10 +17,10 @@ export default class Product extends React.Component {
         </div>
         <div class="productInfo">
           <a class="title">
-            <span>Title</span>
+            <span>Captain America Tshirt</span>
           </a>
           <div class="price">
-            <span>Price</span>
+            <span>Rs 900/-</span>
           </div>
         </div>
       </div>
