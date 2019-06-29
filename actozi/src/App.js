@@ -9,12 +9,29 @@ import Header from "./components/Header/Header";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 import Grid from "./components/Grid/Grid";
+import Tile from "./components/Tile/Tile";
+import { Row, Col } from "react-bootstrap";
 
 function App() {
   return (
     <div>
       <Header />
       <Carousel />
+      <Row
+        style={{
+          marginTop: 50
+        }}
+      >
+        <Col lg={4}>
+          <Tile />
+        </Col>
+        <Col lg={4}>
+          <Tile />
+        </Col>
+        <Col lg={4}>
+          <Tile />
+        </Col>
+      </Row>
       <Grid />
       <Footer />
     </div>

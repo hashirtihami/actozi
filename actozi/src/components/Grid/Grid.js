@@ -9,7 +9,7 @@ import "./Grid.css";
 export default class Grid extends React.Component {
   render() {
     return (
-      <div class="grid">
+      <div className="grid">
         <Row>
           <Col md lg>
             <Product />
