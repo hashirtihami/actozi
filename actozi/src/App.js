@@ -8,15 +8,14 @@ import "slick-carousel/slick/slick-theme.css";
 import Header from "./components/Header/Header";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
+import Grid from "./components/Grid/Grid";
 
 function App() {
   return (
     <div>
       <Header />
       <Carousel />
-      <div>
-        <h1>Actozi is SHIT !!</h1>
-      </div>
+      <Grid />
       <Footer />
     </div>
     // <div className="App">

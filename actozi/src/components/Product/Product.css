@@ -1,0 +1,27 @@
+.productContainer {
+  padding: 1vh;
+  border: 1px solid lightgray;
+  border-radius: 5%;
+}
+
+.image {
+  border-radius: 4% 4% 0 0;
+}
+
+.title {
+  font-size: 1.2em;
+}
+
+.price {
+  font-size: 0.8em;
+}
+
+.title,
+.price {
+  display: flex;
+}
+
+.title span,
+.price span {
+  margin: 0 auto;
+}
