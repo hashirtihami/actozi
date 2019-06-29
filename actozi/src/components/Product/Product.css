@@ -4,24 +4,33 @@
   border-radius: 5%;
 }
 
-.image {
+.productImage {
   border-radius: 4% 4% 0 0;
+  transition: 0.5s ease;
 }
 
-.title {
+.productTitle {
   font-size: 1.2em;
 }
 
-.price {
+.productPrice {
   font-size: 0.8em;
 }
 
-.title,
-.price {
+.productInfo {
+  transition: 0.5s ease;
+}
+
+.productTitle,
+.productPrice {
   display: flex;
 }
 
-.title span,
-.price span {
+.productTitle span,
+.productPrice span {
   margin: 0 auto;
+}
+
+.productContainer:hover .productImage {
+  transform: scale(0.95);
 }
