@@ -14,11 +14,8 @@ import CreateProduct from '../CreateProduct/CreateProduct';
 function Admin() {
   return (
   <Router> 
-    <div className="App">
+    <div className="">
       <HeaderAdmin />
-      <div class="wallpaper">
-      <img src={wallpaper}/>
-      </div>
       <Switch>
       <Route path="/" exact component={Home}/>
       <Route path="/home"  component={Home}/>
@@ -37,5 +34,5 @@ const Home = () => (
     <h1>Welcome nigga</h1>
   </div>
 );
-//  i didnt do shit
+
 export default Admin;
