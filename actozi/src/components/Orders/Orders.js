@@ -5,13 +5,12 @@ import "bootstrap/dist/css/bootstrap.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HeaderAdmin from "../HeaderAdmin/Header";
-
+import OrdersTable from "../OrdersTable/OrdersTable";
 
 function Orders() {
   return (
     <div>
-
-      <h1> ORDER PAGE</h1>
+      <OrdersTable/>
     </div>
   );
 }
