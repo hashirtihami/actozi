@@ -4,13 +4,15 @@ import "../Admin/Admin.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import AddImageButton from "../AddImageButton/AddImageButton"
 import { Button, Form, Row, Col } from 'react-bootstrap';
 
 
 function CreateProductForm() {
   return (
     <div class="container">
+      <h4>Add Product</h4>
+      <hr/>
       <Form>
         <Form.Group as={Row} controlId="formHorizontalCategory">
           <Form.Label column sm={2}>
@@ -30,6 +32,33 @@ function CreateProductForm() {
           </Col>
         </Form.Group>
 
+        <Form.Group as={Row} controlId="formHorizontalDesc">
+          <Form.Label column sm={2}>
+            Product Description
+          </Form.Label>
+          <Col sm={10}>
+            <Form.Control as="textarea" rows="4" placeholder="Enter product description here" />
+          </Col>
+        </Form.Group>
+
+        <Form.Group as={Row} controlId="formHorizontalPrice">
+          <Form.Label column sm={2}>
+            Product Price
+          </Form.Label>
+          <Col sm={4}>
+            <Form.Control placeholder="Enter product price here" />
+          </Col>
+        </Form.Group>
+
+        <Form.Group as={Row} controlId="formHorizontalDesc">
+          <Form.Label column sm={2}>
+            Add Product Image
+          </Form.Label>
+          <Col sm={10}>
+            <AddImageButton/>
+          </Col>
+        </Form.Group>
+
         <fieldset>
           <Form.Group as={Row}>
             <Form.Label as="legend" column sm={2}>
@@ -38,21 +67,27 @@ function CreateProductForm() {
             <Col sm={10}>
               <Form.Check
                 type="checkbox"
-                label="first radio"
+                label="Small"
                 name="formHorizontalRadios"
-                id="formHorizontalRadios1"
+                id="formHorizontalSize1"
               />
               <Form.Check
                 type="checkbox"
-                label="second radio"
+                label="Medium"
                 name="formHorizontalRadios"
-                id="formHorizontalRadios2"
+                id="formHorizontalSize2"
               />
               <Form.Check
                 type="checkbox"
-                label="third radio"
+                label="Large"
                 name="formHorizontalRadios"
-                id="formHorizontalRadios3"
+                id="formHorizontalSize3"
+              />
+              <Form.Check
+                type="checkbox"
+                label="Extra Large"
+                name="formHorizontalRadios"
+                id="formHorizontalSize4"
               />
             </Col>
           </Form.Group>
@@ -60,7 +95,7 @@ function CreateProductForm() {
 
         <Form.Group as={Row}>
           <Col sm={{ span: 10, offset: 2 }}>
-            <Button type="submit">Sign in</Button>
+            <Button variant="outline-dark" type="submit">Add Product</Button>
           </Col>
         </Form.Group>
       </Form>
