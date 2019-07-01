@@ -1,0 +1,18 @@
+.navbar-transparent {
+  background: rgba(52, 58, 64, 0.4) !important;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.navbar-solid {
+  background: rgb(52, 58, 64) !important;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nav-link-white {
+  color: white !important;
+}

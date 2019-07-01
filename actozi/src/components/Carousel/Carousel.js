@@ -14,7 +14,7 @@ export default class Carousel extends React.Component {
       slidesToScroll: 1,
       fade: true,
       autoplay: true,
-      autoplaySpeed: 500
+      autoplaySpeed: 2000
     };
     return (
       <div id="carousel">

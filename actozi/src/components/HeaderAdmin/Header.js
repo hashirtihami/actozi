@@ -9,7 +9,13 @@ import "./Header.css";
 export default class Header extends React.Component {
   render() {
     return (
-      <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
+      <Navbar
+        bg="dark"
+        expand="lg"
+        variant="dark"
+        sticky="top"
+        className="solid"
+      >
         <Navbar.Brand href="#home" className="mx-auto">
           <img
             src={logo}
