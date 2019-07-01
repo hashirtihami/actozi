@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { Row, Col, Container } from "react-bootstrap";
 
 import Header from "../../components/Header/Header";
+import CartTable from "../../components/CartTable/CartTable";
+import CheckoutBox from "../../components/CheckoutBox/CheckoutBox";
 import Footer from "../../components/Footer/Footer";
 
 function Cart() {
@@ -17,7 +19,17 @@ function Cart() {
           <Header />
         </Col>
       </Row>
+      <Row>
+        <Col className="cartTable" lg={8} sm={12} xs={12}>
+          <CartTable/> 
+        </Col>
 
+        <Col className="checkoutCard" lg={4} sm={12} xs={12}>
+          <CheckoutBox/> 
+        </Col>
+      </Row>
+    
+      
 
       {/* <Row>
         <Col lg={12} className="no-padding">

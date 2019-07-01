@@ -5,3 +5,17 @@
 .grid {
   margin: 10vh 5vh 5vh 5vh;
 }
+
+.cartTable{
+  padding-top:40px;
+}
+
+.checkoutCard{
+  padding-top:40px;
+  float:right;
+
+}
+.priceBox{
+  padding-left:60px
+  
+}
