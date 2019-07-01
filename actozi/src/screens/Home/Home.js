@@ -36,6 +36,9 @@ function Home() {
           <Tile />
         </Col>
       </Row>
+      <Row className="featured margin-top">
+        <h1>Featured Products</h1>
+      </Row>
       <Row className="grid">
         <Col md lg>
           <ProductTile />

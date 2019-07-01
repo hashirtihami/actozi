@@ -28,12 +28,12 @@ function ProductDetails() {
           <Header />
         </Col>
       </Row>
-      <Row>
+      <Row className="full-height">
         <Col lg={6}>
           <ReactImageMagnify
             {...{
               smallImage: {
-                alt: "Wristwatch by Ted Baker London",
+                alt: "Nike",
                 isFluidWidth: true,
                 src: img
               },
