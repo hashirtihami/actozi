@@ -18,12 +18,13 @@ function Cart() {
         </Col>
       </Row>
 
+      <div className="full-height" />
 
-      {/* <Row>
+      <Row>
         <Col lg={12} className="no-padding">
           <Footer />
         </Col>
-      </Row> */}
+      </Row>
     </Container>
   );
 }

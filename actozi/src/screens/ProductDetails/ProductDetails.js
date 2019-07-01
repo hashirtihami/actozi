@@ -28,7 +28,7 @@ function ProductDetails() {
           <Header />
         </Col>
       </Row>
-      <Row>
+      <Row className="full-height">
         <Col lg={6}>
           <ReactImageMagnify
             {...{
