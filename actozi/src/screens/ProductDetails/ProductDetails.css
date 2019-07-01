@@ -1,0 +1,5 @@
+.sizes .focus {
+  box-shadow: none !important;
+  background: #6c757d;
+  color: white;
+}

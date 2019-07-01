@@ -2,9 +2,9 @@ import React from "react";
 
 import Image from "react-bootstrap/Image";
 
-import "./Product.css";
+import "./ProductTile.css";
 
-export default class Product extends React.Component {
+export default class ProductTile extends React.Component {
   render() {
     return (
       <div className="productContainer">

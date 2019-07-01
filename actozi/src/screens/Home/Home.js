@@ -10,12 +10,16 @@ import Header from "../../components/Header/Header";
 import Carousel from "../../components/Carousel/Carousel";
 import Footer from "../../components/Footer/Footer";
 import Tile from "../../components/Tile/Tile";
-import Product from "../../components/Product/Product";
+import ProductTile from "../../components/ProductTile/ProductTile";
 
 function Home() {
   return (
     <Container fluid>
-      <Header />
+      <Row>
+        <Col lg={12} className="no-padding">
+          <Header />
+        </Col>
+      </Row>
       <Row>
         <Col lg={12} className="no-padding">
           <Carousel />
@@ -34,16 +38,16 @@ function Home() {
       </Row>
       <Row className="grid">
         <Col md lg>
-          <Product />
+          <ProductTile />
         </Col>
         <Col md lg>
-          <Product />
+          <ProductTile />
         </Col>
         <Col md lg>
-          <Product />
+          <ProductTile />
         </Col>
         <Col md lg>
-          <Product />
+          <ProductTile />
         </Col>
       </Row>
       <Row>

@@ -1,15 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Home from "./screens/Home/Home";
-import Admin from "./components/Admin/Admin";
+
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import ProductDetails from "./screens/ProductDetails/ProductDetails";
+import Home from "./screens/Home/Home";
+import Admin from "./components/Admin/Admin";
 
 ReactDOM.render(
   <Router>
     <Switch>
       <Route path="/" exact component={Home} />
+      <Route path="/product/1" exact component={ProductDetails} />
       <Route path="/admin" component={Admin} />
     </Switch>
   </Router>,
