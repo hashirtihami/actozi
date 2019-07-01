@@ -33,7 +33,7 @@ function ProductDetails() {
           <ReactImageMagnify
             {...{
               smallImage: {
-                alt: "Wristwatch by Ted Baker London",
+                alt: "Nike",
                 isFluidWidth: true,
                 src: img
               },

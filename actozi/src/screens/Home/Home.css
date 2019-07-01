@@ -3,5 +3,9 @@
 }
 
 .grid {
-  margin: 10vh 5vh 5vh 5vh;
+  margin: 5vh 5vh 5vh 5vh;
+}
+
+.featured h1 {
+  margin: 0 auto;
 }
