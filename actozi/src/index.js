@@ -7,12 +7,17 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import ProductDetails from "./screens/ProductDetails/ProductDetails";
 import Home from "./screens/Home/Home";
+import Cart from "./screens/Cart/Cart";
+import Registration from "./screens/Registration/Registration";
 import Admin from "./components/Admin/Admin";
 
 ReactDOM.render(
   <Router>
     <Switch>
       <Route path="/" exact component={Home} />
+      <Route path="/home" component={Home} />
+      <Route path="/cart" component={Cart} />
+      <Route path="/registration" component={Registration} />
       <Route path="/product/1" exact component={ProductDetails} />
       <Route path="/admin" component={Admin} />
     </Switch>

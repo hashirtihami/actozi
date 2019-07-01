@@ -48,7 +48,7 @@ export default class Header extends React.Component {
           }
         )}
       >
-        <Navbar.Brand href="#home" className="nav-link-white">
+        <Navbar.Brand href="/home" className="nav-link-white">
           <img
             src={logo}
             width="30"
@@ -67,10 +67,10 @@ export default class Header extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
           <Nav className="ml-auto">
-            <Nav.Link className="nav-link-white" href="#home">
+            <Nav.Link className="nav-link-white" href="/cart">
               <FontAwesomeIcon icon={faShoppingCart} />
             </Nav.Link>
-            <Nav.Link className="nav-link-white" href="#home">
+            <Nav.Link className="nav-link-white" href="/registration">
               <FontAwesomeIcon icon={faUser} />
             </Nav.Link>
           </Nav>
