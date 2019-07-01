@@ -1,0 +1,11 @@
+.no-padding {
+  padding: 0 !important;
+}
+
+.margin-top {
+  margin-top: 10vh;
+}
+
+.grid {
+  margin: 10vh 5vh 5vh 5vh;
+}

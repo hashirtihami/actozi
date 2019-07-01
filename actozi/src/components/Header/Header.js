@@ -48,7 +48,7 @@ export default class Header extends React.Component {
           }
         )}
       >
-        <Navbar.Brand href="#home" className="mx-auto">
+        <Navbar.Brand href="#home" className="nav-link-white">
           <img
             src={logo}
             width="30"
@@ -56,15 +56,15 @@ export default class Header extends React.Component {
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
           />
+          <span
+            style={{
+              marginLeft: 10
+            }}
+          >
+            Actozi Clothings
+          </span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse>
-          <Nav>
-            <Nav.Link className="nav-link-white" href="#link">
-              Actozi Clothings
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
         <Navbar.Collapse>
           <Nav className="ml-auto">
             <Nav.Link className="nav-link-white" href="#home">
