@@ -21,19 +21,19 @@ function ProductsTable() {
             <tbody>
                 <tr>
                 <td>1</td>
-                <td>Shirt Kali wali</td>
+                <td>White Shirt</td>
                 <td>500</td>
                 <td>@mdo</td>
                 </tr>
                 <tr>
                 <td>2</td>
-                <td>Shirt Neeli wali</td>
+                <td>Black Shirt</td>
                 <td>500</td>
                 <td>@fat</td>
                 </tr>
                 <tr>
                 <td>3</td>
-                <td>Chaddi</td>
+                <td>Trouser</td>
                 <td>500</td>
                 <td>@twitter</td>
                 </tr>

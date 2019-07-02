@@ -22,14 +22,14 @@ function CartTable() {
             <tbody>
                 <tr>
                 <td>1</td>
-                <td>Shirt Kali wali</td>
+                <td>Black Shirt</td>
                 <td>500</td>
                 <td>@mdo</td>
                 <td>delete</td>
                 </tr>
                 <tr>
                 <td>2</td>
-                <td>Shirt Neeli wali</td>
+                <td>Red Shirt</td>
                 <td>500</td>
                 <td>500</td>
                 <td>delete</td>

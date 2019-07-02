@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { Row, Col, Container } from "react-bootstrap";
 
 import Header from "../../components/Header/Header";
+import SignUpForm from "../../components/SignUpForm/SignUpForm";
+import LogInForm from "../../components/LogInForm/LogInForm";
 import Footer from "../../components/Footer/Footer";
 
 
@@ -18,12 +20,18 @@ function Registration() {
           <Header />
         </Col>
       </Row>
+      <Row>
+        <LogInForm/>
+      </Row>
+      <Row>
+        <SignUpForm/>
+      </Row>
 
-      {/* <Row>
+      {/* {<Row>
         <Col lg={12} className="no-padding">
           <Footer />
         </Col>
-      </Row> */}
+      </Row> } */}
 
       </Container>
   );

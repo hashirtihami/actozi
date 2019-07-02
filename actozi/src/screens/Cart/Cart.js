@@ -13,13 +13,13 @@ import Footer from "../../components/Footer/Footer";
 
 function Cart() {
   return (
-    <Container fluid>
+    <Container fluid >
       <Row>
         <Col lg={12} className="no-padding">
           <Header />
         </Col>
       </Row>
-      <Row>
+      <Row className="full-height">
         <Col className="cartTable" lg={8} sm={12} xs={12}>
           <CartTable/> 
         </Col>

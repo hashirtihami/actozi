@@ -18,8 +18,8 @@ function Admin() {
     <div className="">
       <HeaderAdmin />
       <Switch>
-      <Route path="/admin/" exact component={Home}/>
-      <Route path="/admin/home"  component={Home}/>
+      <Route path="/admin/" exact component={Orders}/>
+      <Route path="/admin/home"  component={Orders}/>
       <Route path="/admin/existingproducts" component={ExistingProducts}/>
       <Route path="/admin/orders" component={Orders}/>
       <Route path="/admin/createproducts" component={CreateProduct}/>
@@ -32,7 +32,7 @@ function Admin() {
 
 const Home = () => (
   <div>
-    <h1>Welcome nigga</h1>
+    <h1></h1>
   </div>
 );
 

@@ -22,21 +22,21 @@ function OrdersTable() {
             <tbody>
                 <tr>
                 <td>1</td>
-                <td>Pindi wala</td>
+                <td>Khalid </td>
                 <td>Shirts</td>
                 <td>500</td>
                 <td>@mdo</td>
                 </tr>
                 <tr>
                 <td>2</td>
-                <td>Karanchi wala</td>
+                <td>Mr. Mustafa</td>
                 <td>Shirts</td>
                 <td>500</td>
                 <td>@fat</td>
                 </tr>
                 <tr>
                 <td>3</td>
-                <td>knowhere wala</td>
+                <td>Minahil Ovais</td>
                 <td>Shirts</td>
                 <td>500</td>
                 <td>@twitter</td>
