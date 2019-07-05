@@ -10,18 +10,8 @@
 //   console.log(`App is up and running. Listening on port ${PORT}`);
 // });
 const express = require("express");
-var mysql = require("mysql");
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "test"
-});
 
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-});
+const db = require("./db/config");
 
 // connection.connect()
 
