@@ -8,4 +8,14 @@ Product.findAll = handler => {
   });
 };
 
+Product.create = (product, handler) => {
+  db.query(
+    "INSERT INTO product (category, name, `desc`, url, price) VALUES (?,?,?,?,?)",
+    ["TSHIRT", "Captain America", "BEST TEE EVER", "url", "0"],
+    function(error, results) {
+      handler(error);
+    }
+  );
+};
+
 module.exports = Product;

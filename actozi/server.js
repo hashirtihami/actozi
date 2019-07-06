@@ -13,11 +13,22 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Import Path
+const path = require("path");
+
+// Static files
+app.use(express.static("build"));
+
 app.use("/api/products", require("./routes/product-routes"));
+
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/public/index.html"));
+});
 
 app.listen(PORT, () => {
   console.log(`App is up and running. Listening on port ${PORT}`);
 });
+
 // connection.connect()
 
 // connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {

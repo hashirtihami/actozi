@@ -16,4 +16,13 @@ productController.findAll = (req, res) => {
   });
 };
 
+productController.create = (req, res) => {
+  Product.create(req.param.product, err => {
+    if (err) {
+      console.log(err);
+      res.status(500).json(err);
+    }
+  });
+};
+
 module.exports = productController;
