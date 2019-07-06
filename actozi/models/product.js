@@ -1,9 +1,11 @@
-const db = require("./db/config");
+const db = require("../db/config");
 
 const Product = {};
 
-Product.findAll = () => {
-  db.query("Select * from product", function(err, result, field) {
-    return result;
+Product.findAll = handler => {
+  db.query("SELECT * FROM product", function(error, results) {
+    handler(error, results);
   });
 };
+
+module.exports = Product;
