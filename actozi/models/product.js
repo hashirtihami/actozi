@@ -9,6 +9,7 @@ Product.findAll = handler => {
 };
 
 Product.create = (product, handler) => {
+  console.log(product.body);
   db.query(
     "INSERT INTO product (category, name, `desc`, url, price) VALUES (?,?,?,?,?)",
     ["TSHIRT", "Captain America", "BEST TEE EVER", "url", "0"],

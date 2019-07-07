@@ -17,7 +17,7 @@ productController.findAll = (req, res) => {
 };
 
 productController.create = (req, res) => {
-  Product.create(req.param.product, err => {
+  Product.create(req, err => {
     if (err) {
       console.log(err);
       res.status(500).json(err);

@@ -16,7 +16,9 @@ class CreateProductForm extends React.Component {
   };
 
   submitForm = () => {
-    axios.get("/api/products/newProduct");
+    axios.post("/api/products/newProduct", {
+      ...this.state
+    });
   };
 
   render() {
@@ -98,25 +100,33 @@ class CreateProductForm extends React.Component {
                   type="checkbox"
                   label="Small"
                   name="size"
+                  value="S"
                   id="formHorizontalSize1"
+                  onChange={this.handleChange}
                 />
                 <Form.Check
                   type="checkbox"
                   label="Medium"
                   name="size"
+                  value="M"
                   id="formHorizontalSize2"
+                  onChange={this.handleChange}
                 />
                 <Form.Check
                   type="checkbox"
                   label="Large"
                   name="size"
+                  value="L"
                   id="formHorizontalSize3"
+                  onChange={this.handleChange}
                 />
                 <Form.Check
                   type="checkbox"
                   label="Extra Large"
                   name="size"
+                  value="XL"
                   id="formHorizontalSize4"
+                  onChange={this.handleChange}
                 />
               </Col>
             </Form.Group>
