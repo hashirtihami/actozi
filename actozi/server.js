@@ -11,13 +11,13 @@
 // });
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Import Path
 const path = require("path");
 
 // Static files
-app.use(express.static("build"));
+app.use(express.static(path.join(__dirname, "build")));
 
 app.use("/api/products", require("./routes/product-routes"));
 

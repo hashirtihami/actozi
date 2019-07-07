@@ -16,7 +16,7 @@ class CreateProductForm extends React.Component {
   };
 
   submitForm = () => {
-    axios.get("/api/products/");
+    axios.get("/api/products/newProduct");
   };
 
   render() {
