@@ -4,7 +4,6 @@ import "../Admin/Admin.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import AddImageButton from "../AddImageButton/AddImageButton"
 import { Button, Form, Row, Col } from 'react-bootstrap';
 
 
@@ -37,14 +36,6 @@ function SignUpForm() {
 
         <Form.Group as={Row} controlId="formHorizontalProduct">
           <Form.Label column sm={2}>
-            Password:
-          </Form.Label>
-          <Col sm={10}>
-            <Form.Control placeholder="Enter your password here" />
-          </Col>
-        </Form.Group>
-        <Form.Group as={Row} controlId="formHorizontalProduct">
-          <Form.Label column sm={2}>
             Address
           </Form.Label>
           <Col sm={10}>
@@ -63,7 +54,7 @@ function SignUpForm() {
 
         <Form.Group as={Row}>
           <Col sm={{ span: 10, offset: 2 }}>
-            <Button variant="outline-dark" type="submit">Sign Up</Button>
+            <Button variant="outline-dark" type="submit">Checkout</Button>
           </Col>
         </Form.Group>
       </Form>

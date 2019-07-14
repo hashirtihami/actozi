@@ -21,9 +21,6 @@ function Registration() {
         </Col>
       </Row>
       <Row>
-        <LogInForm/>
-      </Row>
-      <Row>
         <SignUpForm/>
       </Row>
 

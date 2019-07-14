@@ -70,9 +70,9 @@ export default class Header extends React.Component {
             <Nav.Link className="nav-link-white" href="/cart">
               <FontAwesomeIcon icon={faShoppingCart} />
             </Nav.Link>
-            <Nav.Link className="nav-link-white" href="/registration">
+            {/* <Nav.Link className="nav-link-white" href="/registration">
               <FontAwesomeIcon icon={faUser} />
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
