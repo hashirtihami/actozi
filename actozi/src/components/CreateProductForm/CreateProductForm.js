@@ -9,10 +9,26 @@ import AddImageButton from "../AddImageButton/AddImageButton";
 import { Button, Form, Row, Col } from "react-bootstrap";
 
 class CreateProductForm extends React.Component {
-  state = {};
+  state = {
+    size: []
+  };
 
   handleChange = event => {
+    console.log(event.target.value);
     this.setState({ [event.target.name]: event.target.value });
+  };
+
+  //This is broken
+  handleSizeChange = event => {
+    let value = event.target.value;
+    this.setState(prevState => {
+      if (prevState.size.includes(value)) {
+        return {
+          size: [...prevState.size]
+        };
+      } else return { size: [...prevState.size, value] };
+    });
+    console.log(this.state.size);
   };
 
   submitForm = () => {
@@ -102,7 +118,7 @@ class CreateProductForm extends React.Component {
                   name="size"
                   value="S"
                   id="formHorizontalSize1"
-                  onChange={this.handleChange}
+                  onChange={this.handleSizeChange}
                 />
                 <Form.Check
                   type="checkbox"
@@ -110,7 +126,7 @@ class CreateProductForm extends React.Component {
                   name="size"
                   value="M"
                   id="formHorizontalSize2"
-                  onChange={this.handleChange}
+                  onChange={this.handleSizeChange}
                 />
                 <Form.Check
                   type="checkbox"
@@ -118,7 +134,7 @@ class CreateProductForm extends React.Component {
                   name="size"
                   value="L"
                   id="formHorizontalSize3"
-                  onChange={this.handleChange}
+                  onChange={this.handleSizeChange}
                 />
                 <Form.Check
                   type="checkbox"
@@ -126,7 +142,7 @@ class CreateProductForm extends React.Component {
                   name="size"
                   value="XL"
                   id="formHorizontalSize4"
-                  onChange={this.handleChange}
+                  onChange={this.handleSizeChange}
                 />
               </Col>
             </Form.Group>
