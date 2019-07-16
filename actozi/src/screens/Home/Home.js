@@ -25,22 +25,6 @@ class Home extends React.Component {
     });
   }
 
-  createProductTile = product => {
-    console.log(product);
-    console.log(this.state.products);
-    return (
-      <Col md lg key={product.productId}>
-        <ProductTile
-          category={product.category}
-          name={product.name}
-          desc={product.desc}
-          url={product.url}
-          price={product.price}
-        />
-      </Col>
-    );
-  };
-
   createProductGrid = () => {
     let parent = [];
     for (let i = 0; i < this.state.products.length; ) {
@@ -103,7 +87,7 @@ class Home extends React.Component {
           </Col>
         </Row>
         <Row className="featured margin-top">
-          <h1>Featured Products</h1>
+          <h1>Products</h1>
         </Row>
         <Row className="grid">
           {this.state.products.length !== 0 ? (
