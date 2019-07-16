@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
       <Navbar  bg="dark" expand="lg" variant="dark" sticky="bottom">
         <Nav className="footer-nav">
           <Navbar.Text>© 2019 Actozi Clothing</Navbar.Text>
-          <Nav.Link href="#home">About</Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
           <Nav.Link href="#link">Privacy Policy</Nav.Link>
           <Nav.Link href="#home">Terms Of Use</Nav.Link>
         </Nav>
