@@ -27,6 +27,7 @@ class Home extends React.Component {
 
   createProductTile = product => {
     console.log(product);
+    console.log(this.state.products);
     return (
       <Col md lg key={product.productId}>
         <ProductTile
@@ -38,6 +39,34 @@ class Home extends React.Component {
         />
       </Col>
     );
+  };
+
+  createProductGrid = () => {
+    let parent = [];
+    for (let i = 0; i < this.state.products.length; ) {
+      console.log(i);
+      let children = [];
+      for (let j = 0; j < 4; j++, i++) {
+        children.push(
+          <Col md lg key={this.state.products[i].productId}>
+            <ProductTile
+              category={this.state.products[i].category}
+              name={this.state.products[i].name}
+              desc={this.state.products[i].desc}
+              url={this.state.products[i].url}
+              price={this.state.products[i].price}
+            />
+          </Col>
+        );
+      }
+      parent.push(
+        <Row key={i} className="grid">
+          {children}
+        </Row>
+      );
+    }
+    console.log(parent);
+    return parent;
   };
 
   render() {
@@ -55,13 +84,22 @@ class Home extends React.Component {
         </Row>
         <Row className="margin-top">
           <Col lg={4} sm={4} xs={4}>
-            <Tile />
+            <Tile
+              title="Shop Jeans"
+              url="https://images.unsplash.com/photo-1555689502-c4b22d76c56f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            />
           </Col>
           <Col lg={4} sm={4} xs={4}>
-            <Tile />
+            <Tile
+              title="Shop Tshirts"
+              url="https://images.unsplash.com/photo-1521043330514-61d46d71684c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
           </Col>
           <Col lg={4} sm={4} xs={4}>
-            <Tile />
+            <Tile
+              title="Shop Kids Wear"
+              url="https://images.unsplash.com/photo-1513787345924-e09d880a19a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"
+            />
           </Col>
         </Row>
         <Row className="featured margin-top">
@@ -69,7 +107,7 @@ class Home extends React.Component {
         </Row>
         <Row className="grid">
           {this.state.products.length !== 0 ? (
-            this.state.products.map(product => this.createProductTile(product))
+            this.createProductGrid()
           ) : (
             <div>Loading</div>
           )}
