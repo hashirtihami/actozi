@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Row, Col, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import Header from "../../components/Header/Header";
 import Carousel from "../../components/Carousel/Carousel";
@@ -31,17 +32,24 @@ class Home extends React.Component {
       console.log(i);
       let children = [];
       for (let j = 0; j < 4; j++, i++) {
-        children.push(
-          <Col md lg key={this.state.products[i].productId}>
-            <ProductTile
-              category={this.state.products[i].category}
-              name={this.state.products[i].name}
-              desc={this.state.products[i].desc}
-              url={this.state.products[i].url}
-              price={this.state.products[i].price}
-            />
-          </Col>
-        );
+        if (i < this.state.products.length) {
+          children.push(
+            <Col md={3} lg={3} key={this.state.products[i].productId}>
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/product/1"
+              >
+                <ProductTile
+                  category={this.state.products[i].category}
+                  name={this.state.products[i].name}
+                  desc={this.state.products[i].desc}
+                  url={this.state.products[i].url}
+                  price={this.state.products[i].price}
+                />
+              </Link>
+            </Col>
+          );
+        }
       }
       parent.push(
         <Row key={i} className="grid">

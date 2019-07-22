@@ -17,7 +17,7 @@ export default class ProductTile extends React.Component {
             <span>{this.props.name}</span>
           </a>
           <div className="productPrice">
-            <span>{this.props.price}/-</span>
+            <span>PKR {this.props.price}/-</span>
           </div>
         </div>
       </div>
