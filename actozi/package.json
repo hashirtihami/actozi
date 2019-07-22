@@ -12,6 +12,7 @@
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
+    "concurrently": "^4.1.1",
     "express": "^4.17.1",
     "mysql": "^2.17.1",
     "react": "^16.8.6",
@@ -26,7 +27,10 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "client": "react-scripts start",
+    "server": "node server.js --ignore client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
